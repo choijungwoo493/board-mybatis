@@ -26,6 +26,10 @@ public class IndexController {
         if(student.isPresent()){
             log.debug("student : {}",student.get());
         }
+        else{
+            return null;
+        }
         return "index/index";
     }
+
 }
